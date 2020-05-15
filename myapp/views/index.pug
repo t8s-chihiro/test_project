@@ -3,3 +3,11 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  script(type='text/javascript').
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET","/api/photo/list");
+    xhr.addEventListener("load", function(e){
+        var photoList = JSON.parse(xhr.responseText);
+        console.log(photoList);
+    });
+    xhr.send();
