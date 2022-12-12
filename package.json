@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/t8s-chihiro/test_project#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-generator": "^4.16.1",
     "jquery": "^3.4.1",
     "postgres": "^1.0.2",
